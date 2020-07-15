@@ -1,0 +1,165 @@
+
+@font-face {
+  font-family: 'IcoMoon';
+  src: url('../fonts/fonts/icomoon.eot'), 
+       url('../fonts/fonts/icomoon.woff') format('woff'),       
+       url('../fonts/fonts/icomoon')  format('truetype')      
+}
+*{box-sizing: border-box;}
+body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
+header{
+  position: relative; 
+  background: #666; 
+  height:56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 85px;
+  -webkit-box-shadow: 0 2px 2px 0 #ccc;
+  box-shadow: 0 2px 2px 0 #ccc;
+}
+
+/* icons styles */
+.icon{
+  font-family: 'IcoMoon';
+  position: relative;
+  font-style: normal;
+}
+.menu-icon{
+  display: block;
+  background: #202020; 
+  width: 60px; 
+  height: 56px; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  color: #fff;  
+}
+.menu-icon:hover{cursor: pointer;}
+.menu-icon:before{
+  content: "\e807";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+.icon-filters:before, .icon-portfolio:before, .icon-explict-rights:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+}
+.icon-filters:before {
+  content: "\e61f";
+}
+.icon-portfolio:before {
+  content: "\e61e";
+}
+.icon-explict-rights:before {
+  content: "\e8e3";
+}
+.breadcrumbs-separator:before{
+  content: "\e844";
+}
+.input-icon{
+  font-family: 'IcoMoon';
+  font-style: normal;
+  color: #fff;
+}
+.icon-search:before, .icon-dropdown:before {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 18px;
+}
+.icon-search:before{
+  content: "\e660";
+  left: 15px;
+}
+.icon-dropdown:before{
+  content: "\edc6";
+  right: 15px;
+}
+.icon-dropdown:hover{cursor: pointer;}
+
+/* menu styles */
+.menu-container{
+  position: absolute; 
+}
+.menu-container input{opacity: 0;  margin: 0; }
+.menu-container input:checked ~ .menu-list{
+  display: flex; 
+  flex-direction: column;
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+}
+input:checked + .menu-icon:before{
+  content: "\e8a0";
+}
+.menu-list{display: none; background: #202020; padding: 0;}
+.menu-list a{
+  display: flex;  
+  align-items: center;
+  white-space: nowrap;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ccc;
+}
+.menu-list a:hover{
+  background: #3a3a3a;
+  color: #fff;
+}
+.menu-list .icon{
+  width: 60px; 
+  height: 56px;
+  font-family: 'IcoMoon';
+}
+.menu-list a span{
+  display: none;
+  padding: 0 20px 0 0;
+  }
+.menu-list:hover span{
+  display: block;
+  text-transform: uppercase;
+}
+
+/* breadcrumbs styles */
+.breadcrumbs{
+  font-size: 19px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs a{
+  font-weight: bold;
+  color:#fff;
+  text-decoration: none;
+}
+.breadcrumbs-separator{margin: 0 20px;}
+
+/* search styles */
+.search{
+  display: flex;
+  background: #707070;
+  padding: 8px 45px;
+  border-radius: 3px;
+  position: relative;
+}
+.search input{
+  color: #fff;
+  border: 0 none;
+  background: none;
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: -2px;
+}
+.search input:focus{outline: medium none;}
+.search input::-webkit-input-placeholder{
+  color: #fff;
+}

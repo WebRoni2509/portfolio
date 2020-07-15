@@ -1,0 +1,279 @@
+@media screen and (max-width: 991px) {
+	header{
+		.logo{
+			a{
+				width: 140px;
+				display: block;
+				img{			
+				}
+			}
+		}
+		.nav-menu{		
+			ul{
+				li{
+					margin: 0 10px;
+					a{
+						font-size: 14px;
+					}
+				}
+			}
+			.cart{	
+			}
+		}
+	}
+	.sign-up-form {
+		margin: 70px 15px;
+		padding: 50px 15px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.scrollToTop {
+		width:50px;
+		height:50px;
+		position:fixed;
+		bottom: 100px;
+		right: 15px;
+		display:none;
+		background: #fff url(../img/up-arrow.png) no-repeat center;
+		box-shadow: 0px 12px 61px -5px #9ba9b3;
+	}
+	.slick-dots{
+		right: 15px;
+	}
+
+	/*header*/ 
+	header{
+		height: 45px;
+		margin: 0 0 10px 0;
+		.mobile-header-items{
+			display: block;
+			.search-mobile{
+				.search-btn{
+					display: inline-block;
+				}
+			}
+		}
+	
+		.header-inner{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			.menu-toggle{
+				display: block;
+			}
+			.logo{
+				margin: auto;
+				a{
+					margin-top: 10px;
+					img{
+						height: 40px;
+					}
+				}	
+			}
+			.cart{
+				display: none;
+			}
+			.menu-toggle{
+				position: absolute;
+				top: 25px;
+				left: 15px;
+			}
+			.search-btn{
+				display: none;
+			}
+		}
+		.info-nav{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: baseline;
+			order: 1;
+			margin: 30px 0;
+			.phone{
+				display: none;
+			}
+			.search{
+				display: none;
+			}
+			.user_lang{
+				display: flex;
+				justify-content: space-between;
+				margin-left: 0;
+				.lang{
+				    position: absolute;
+    				right: 15px;
+				}
+			}
+		}
+		.menu-container{
+		    display: none;
+		    display: flex;
+		    flex-direction: column;
+		    position: absolute;
+		    top: 55px;
+		    background: #fff;
+		  	box-shadow: 0 6px 15px -5px #ccc;
+			-webkit-box-shadow: 0 6px 15px -5px #ccc;
+		    left: 0;
+		    z-index: 999;
+		    right: 0;
+		    padding: 0 15px;
+		}
+		.nav-menu{
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: flex-start;
+			ul{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				li{
+					margin: 10px 0;
+					a{
+						font-size: 14px;
+						display: block;
+					}
+					.nav-dropdown {
+						position: relative;
+						li{
+							a{
+								padding: 5px 15px;
+							}
+						}
+					}
+				}
+				.drop{
+					padding-right: 0;
+					&:after {
+						right: 15px; 
+					}
+				}
+
+			}
+			.cart{
+				width: 25px;
+				height: 25px;
+			}
+		}
+		.mobile-hide{
+			display: none!important;
+		}
+		.mobile-show{
+			display: flex!important;
+		}
+	}
+
+	/*slider responsive*/
+	.slider-inner{
+		.slider-text{
+			max-width: 300px;
+			h3{
+				color: #f6303e;
+				font-size: 30px;
+			}
+			p{
+				color: #8da5ba;
+				font-size: 12px;
+				line-height: 20px;	
+				margin: 20px 0 30px 0;
+			}
+		}
+		.slider-img{
+			img{
+				width: 80%;
+			}
+		}
+	}
+
+	
+	//signup
+	.sign-up-form {
+		margin: 70px -15px;
+		padding: 50px 15px;
+		.page-title-sm{
+			display: block;
+		}
+		.page-title{display: none;}
+		.form-hide {
+			display: none;
+		}
+		.form-row {
+			flex-direction: column;
+			.form-cell{
+				width: 100%;
+				margin: 15px 0;
+			}
+		}
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"] {
+			box-sizing: border-box;
+			padding: 10px 20px;
+			width: 100%;
+			border: 1px solid #b0bec1;
+		}
+		input[type="submit"] {
+			width: 100%;
+			margin: 20px auto 0;
+		}
+		.nice-select {
+			width: 100%;
+		}
+		input.message {
+			width: 100%;
+		}
+	}	
+}
+
+@media screen and (max-width: 576px) {
+	header{
+		.logo{
+			a{
+				width: 85px;
+			}
+		}
+	}
+	.slider-inner{
+		.slider-text{
+			.slider-img-xs{
+				display: block;
+				max-height: 200px;
+				margin: 0 auto;
+			}
+		}
+		.slider-img{
+			display: none;
+		}
+		.slider-btn-row{
+			text-align: center;
+			.slider-btn{
+				padding: 15px 30px;
+			}
+		}
+	}
+
+	//products
+	.products-item {
+		margin: 0 5px;
+		.product-box{
+			background: #f6f6f6;
+		}
+	}	
+	
+	footer{
+		text-align: center;
+		.footer-inner{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: stretch;
+			.made-by{
+				text-align: center;
+				margin-top: 12px;
+			}
+		}
+	}
+}
